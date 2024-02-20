@@ -1,0 +1,107 @@
+spring:
+  application:
+    name: llm-file-service-local
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+  #  cloud:
+#    nacos:
+#      config:
+#        enabled: false
+#        refresh-enabled: false
+#      discovery:
+#        server-addr: 10.180.151.125:18848
+#        namespace: ab2fa993-d789-4c48-8556-2d89a6d83f6b
+#        group: LLM_DEV_GROUP
+
+#  servlet:
+#    multipart:
+#      # 最大上传单个文件大小
+#      max-file-size: 50MB
+#      # 最大总上传数据大小
+#      max-request-size: 500MB
+
+  # MySQL配置
+#  datasource:
+#    username: root
+#    password: 123456
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://192.168.188.250:41006/rq?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ry-vue?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+    #    url: jdbc:mysql://43.142.171.193:53126/ry-vue?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+#  datasource:
+#    username: root
+#    password: 123456
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/ry-vue?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+   #HikariPool 较佳配置
+    hikari:
+      connection-timeout: 3000
+      validation-timeout: 3000
+      idle-timeout: 60000
+      login-timeout: 5
+      max-lifetime: 60000
+      maximum-pool-size: 10
+      minimum-idle: 10
+      read-only: false
+
+# redis配置
+  redis:
+    database: 1
+    host: 10.180.151.125
+    port: 26379
+    password: Redis_mmip_125
+    timeout: 30000
+    lettuce:
+      pool:
+        # 连接池的最大数据库连接数
+        max-active: 10
+        # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-wait: -1
+        # 连接池中的最大空闲连接
+        max-idle: 8
+        # 连接池中的最小空闲连接
+        min-idle: 0
+mybatis-plus:
+  configuration:
+    #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
+  global-config:
+    db-config:
+      # id生成策略配置
+      id-type: assign_id # 雪花算法生成
+      # 逻辑删除配置
+      logic-delete-field: is_deleted
+      logic-not-delete-value: 0
+      logic-delete-value: 1
+
+logging:
+  config: classpath:log-config.xml
+  level:
+    root: WARN
+#minio
+minio:
+#  url: http://localhost:9000/
+#  accessKey: admin
+#  secretKey: admin123456
+#  bucketsName: worker-order
+  url: http://43.142.171.193:39000/
+  accessKey: minioadmin
+  secretKey: yzgas@001!
+  bucketsName: worker-order
+alarm-info:
+  #告警上报间隔 （单位秒：s）
+  report-interval: 3600
+weather:
+  weatherUrl: https://devapi.qweather.com/
+  cityUrl: https://geoapi.qweather.com/
+  nowPath: v7/weather/now
+  24hPath: v7/weather/24h
+  3dPath: v7/weather/3d
+  cityPath: v2/city/lookup
+  #key: e0fa55ad9c894c909fbcb74ba147b685

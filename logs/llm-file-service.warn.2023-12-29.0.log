@@ -1,0 +1,160 @@
+2023-12-29 10:52:13.796 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 10:52:23.350 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 10:57:34.150 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 10:57:45.277 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 10:59:26.469 WARN [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool.run:788 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49s50ms94µs).
+2023-12-29 11:01:03.466 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 11:01:08.743 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 15:26:14.565 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 15:26:17.856 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 15:29:46.529 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 15:29:51.021 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 15:32:56.135 WARN [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool.run:788 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m6s395ms858µs900ns).
+2023-12-29 15:33:59.228 WARN [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool.run:788 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m5s23ms188µs700ns).
+2023-12-29 15:38:42.512 WARN [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool.run:788 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m43s284ms667µs900ns).
+2023-12-29 15:41:12.436 WARN [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool.run:788 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m29s923ms660µs500ns).
+2023-12-29 15:42:15.322 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 15:42:19.350 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 15:43:09.760 WARN [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool.run:788 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s309ms748µs500ns).
+2023-12-29 15:44:46.757 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 15:44:50.781 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 15:47:22.731 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 15:47:27.055 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 15:49:46.588 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 15:49:50.026 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 15:50:49.408 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 15:50:53.059 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 15:52:03.994 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 15:52:07.252 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 15:53:07.912 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 15:53:12.051 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 15:57:06.152 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 15:57:09.919 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 15:59:08.849 WARN [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool.run:788 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m1s618ms18µs999ns).
+2023-12-29 16:02:18.585 WARN [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool.run:788 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m9s734ms746µs401ns).
+2023-12-29 16:04:30.307 WARN [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool.run:788 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m11s723ms25µs899ns).
+2023-12-29 16:06:43.281 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 16:06:46.731 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 16:08:43.035 WARN [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool.run:788 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m58s677ms242µs100ns).
+2023-12-29 16:09:26.110 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 16:09:29.733 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 16:12:14.742 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 16:12:18.066 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 16:13:58.714 WARN [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool.run:788 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m42s918ms413µs600ns).
+2023-12-29 16:14:28.471 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 16:14:31.790 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 16:16:43.226 WARN [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool.run:788 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m13s694ms516µs100ns).
+2023-12-29 16:17:10.057 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 16:17:14.000 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 16:20:09.210 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 16:20:12.892 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 16:21:42.646 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 16:21:49.639 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 16:23:20.239 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 16:23:24.065 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 16:27:27.881 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 16:27:33.617 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 16:28:38.424 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 16:28:42.032 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 16:29:53.315 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 16:29:56.429 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 16:33:00.133 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 16:33:03.481 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 16:35:22.113 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 16:35:25.808 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 16:36:55.302 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 16:37:00.228 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 16:39:31.016 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 16:39:34.619 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 16:44:07.002 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 16:44:10.104 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 21:26:21.581 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 21:26:28.068 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 21:26:39.084 WARN [boundedElastic-1] o.s.b.actuate.redis.RedisReactiveHealthIndicator.handleFailure:89 - Redis health check failed
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1689)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1597)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1383)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1366)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedReactiveConnection(LettuceConnectionFactory.java:1117)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:509)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:103)
+	at reactor.core.publisher.MonoSupplier.call(MonoSupplier.java:86)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:227)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:330)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:216)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1595)
+	... 15 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:6379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2023-12-29 21:28:43.523 WARN [main] com.zaxxer.hikari.HikariConfig.validateNumerics:1092 - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2023-12-29 21:28:50.733 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:219 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-29 21:29:01.919 WARN [boundedElastic-1] o.s.b.actuate.redis.RedisReactiveHealthIndicator.handleFailure:89 - Redis health check failed
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1689)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1597)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1383)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1366)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedReactiveConnection(LettuceConnectionFactory.java:1117)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:509)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:103)
+	at reactor.core.publisher.MonoSupplier.call(MonoSupplier.java:86)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:227)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:330)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:216)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1595)
+	... 15 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:6379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)

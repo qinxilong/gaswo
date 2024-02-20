@@ -1,0 +1,27 @@
+2023-10-17 22:43:10.851 INFO [background-preinit] org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.2.5.Final
+2023-10-17 22:43:10.883 INFO [main] com.example.demo.DemoApplication.logStarting:55 - Starting DemoApplication using Java 1.8.0_172 on DESKTOP-5DFIICV with PID 11044 (D:\rq\demo\target\classes started by qinxiyun in D:\rq\demo)
+2023-10-17 22:43:10.885 INFO [main] com.example.demo.DemoApplication.logStartupProfileInfo:640 - The following 1 profile is active: "local"
+2023-10-17 22:43:13.167 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:262 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-17 22:43:13.169 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-10-17 22:43:13.196 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:201 - Finished Spring Data repository scanning in 20 ms. Found 0 JDBC repository interfaces.
+2023-10-17 22:43:13.205 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:262 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-17 22:43:13.206 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:132 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-17 22:43:13.220 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:201 - Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2023-10-17 22:43:13.236 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:262 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-17 22:43:13.238 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:132 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-17 22:43:13.257 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:201 - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-10-17 22:43:14.517 INFO [main] o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 - Tomcat initialized with port(s): 8081 (http)
+2023-10-17 22:43:14.526 INFO [main] org.apache.coyote.http11.Http11NioProtocol.log:173 - Initializing ProtocolHandler ["http-nio-8081"]
+2023-10-17 22:43:14.527 INFO [main] org.apache.catalina.core.StandardService.log:173 - Starting service [Tomcat]
+2023-10-17 22:43:14.528 INFO [main] org.apache.catalina.core.StandardEngine.log:173 - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-10-17 22:43:14.705 INFO [main] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 - Initializing Spring embedded WebApplicationContext
+2023-10-17 22:43:14.706 INFO [main] o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:292 - Root WebApplicationContext: initialization completed in 3641 ms
+2023-10-17 22:43:15.073 INFO [main] com.zaxxer.hikari.HikariDataSource.getConnection:110 - HikariPool-1 - Starting...
+2023-10-17 22:43:19.346 INFO [main] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-17 22:43:19.519 INFO [main] org.hibernate.Version.logVersion:44 - HHH000412: Hibernate ORM core version 5.6.11.Final
+2023-10-17 22:43:19.789 INFO [main] org.hibernate.annotations.common.Version.<clinit>:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-17 22:43:19.917 INFO [main] com.zaxxer.hikari.HikariDataSource.getConnection:110 - HikariPool-1 - Starting...
+2023-10-17 22:43:23.961 INFO [main] org.apache.catalina.core.StandardService.log:173 - Stopping service [Tomcat]
+2023-10-17 22:43:23.989 INFO [main] o.s.b.a.logging.ConditionEvaluationReportLoggingListener.logMessage:136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.

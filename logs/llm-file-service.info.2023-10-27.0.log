@@ -1,0 +1,144 @@
+2023-10-27 20:49:06.071 INFO [background-preinit] org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.2.5.Final
+2023-10-27 20:49:06.222 INFO [main] com.example.demo.DemoApplication.logStarting:55 - Starting DemoApplication using Java 1.8.0_172 on DESKTOP-5DFIICV with PID 4740 (D:\rq\demo\target\classes started by qinxiyun in D:\rq\demo)
+2023-10-27 20:49:06.223 INFO [main] com.example.demo.DemoApplication.logStartupProfileInfo:640 - The following 1 profile is active: "local"
+2023-10-27 20:49:13.091 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:262 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-27 20:49:13.093 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-10-27 20:49:13.203 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:201 - Finished Spring Data repository scanning in 103 ms. Found 0 JDBC repository interfaces.
+2023-10-27 20:49:13.222 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:262 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-27 20:49:13.222 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:132 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-27 20:49:13.265 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:201 - Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2023-10-27 20:49:13.319 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:262 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-27 20:49:13.322 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:132 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-27 20:49:13.354 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:201 - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2023-10-27 20:49:15.819 INFO [main] o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 - Tomcat initialized with port(s): 8081 (http)
+2023-10-27 20:49:15.845 INFO [main] org.apache.coyote.http11.Http11NioProtocol.log:173 - Initializing ProtocolHandler ["http-nio-8081"]
+2023-10-27 20:49:15.846 INFO [main] org.apache.catalina.core.StandardService.log:173 - Starting service [Tomcat]
+2023-10-27 20:49:15.846 INFO [main] org.apache.catalina.core.StandardEngine.log:173 - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-10-27 20:49:16.181 INFO [main] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 - Initializing Spring embedded WebApplicationContext
+2023-10-27 20:49:16.182 INFO [main] o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:292 - Root WebApplicationContext: initialization completed in 9772 ms
+2023-10-27 20:49:16.955 INFO [main] com.zaxxer.hikari.HikariDataSource.getConnection:110 - HikariPool-1 - Starting...
+2023-10-27 20:49:18.474 INFO [main] com.zaxxer.hikari.HikariDataSource.getConnection:123 - HikariPool-1 - Start completed.
+2023-10-27 20:49:18.611 INFO [main] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-27 20:49:18.829 INFO [main] org.hibernate.Version.logVersion:44 - HHH000412: Hibernate ORM core version 5.6.11.Final
+2023-10-27 20:49:19.269 INFO [main] org.hibernate.annotations.common.Version.<clinit>:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-27 20:49:19.767 INFO [main] org.hibernate.dialect.Dialect.<init>:175 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-27 20:49:20.253 INFO [main] o.h.e.t.jta.platform.internal.JtaPlatformInitiator.initiateService:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-27 20:49:20.283 INFO [main] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-27 20:49:26.360 INFO [main] o.s.boot.actuate.endpoint.web.EndpointLinksResolver.<init>:58 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-27 20:49:28.058 INFO [main] org.apache.coyote.http11.Http11NioProtocol.log:173 - Starting ProtocolHandler ["http-nio-8081"]
+2023-10-27 20:49:28.119 INFO [main] o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 - Tomcat started on port(s): 8081 (http) with context path ''
+2023-10-27 20:49:28.719 INFO [main] com.example.demo.DemoApplication.logStarted:61 - Started DemoApplication in 24.367 seconds (JVM running for 29.651)
+2023-10-27 20:49:31.793 INFO [RMI TCP Connection(2)-192.168.2.7] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-27 20:49:31.794 INFO [RMI TCP Connection(2)-192.168.2.7] org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'dispatcherServlet'
+2023-10-27 20:49:31.797 INFO [RMI TCP Connection(2)-192.168.2.7] org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 2 ms
+2023-10-27 21:00:32.538 INFO [SpringApplicationShutdownHook] sys-user.shutdownAsyncManager:31 - ====关闭后台任务任务线程池====
+2023-10-27 21:00:32.735 INFO [SpringApplicationShutdownHook] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.destroy:651 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-27 21:00:32.759 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.close:350 - HikariPool-1 - Shutdown initiated...
+2023-10-27 21:00:32.779 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.close:352 - HikariPool-1 - Shutdown completed.
+2023-10-27 21:00:48.239 INFO [main] com.example.demo.DemoApplication.logStarting:55 - Starting DemoApplication using Java 1.8.0_172 on DESKTOP-5DFIICV with PID 19180 (D:\rq\demo\target\classes started by qinxiyun in D:\rq\demo)
+2023-10-27 21:00:48.240 INFO [background-preinit] org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.2.5.Final
+2023-10-27 21:00:48.243 INFO [main] com.example.demo.DemoApplication.logStartupProfileInfo:640 - The following 1 profile is active: "local"
+2023-10-27 21:00:50.380 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:262 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-27 21:00:50.381 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-10-27 21:00:50.411 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:201 - Finished Spring Data repository scanning in 25 ms. Found 0 JDBC repository interfaces.
+2023-10-27 21:00:50.419 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:262 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-27 21:00:50.420 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:132 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-27 21:00:50.440 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:201 - Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2023-10-27 21:00:50.455 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:262 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-27 21:00:50.459 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:132 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-27 21:00:50.481 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:201 - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2023-10-27 21:00:51.452 INFO [main] o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 - Tomcat initialized with port(s): 8081 (http)
+2023-10-27 21:00:51.462 INFO [main] org.apache.coyote.http11.Http11NioProtocol.log:173 - Initializing ProtocolHandler ["http-nio-8081"]
+2023-10-27 21:00:51.463 INFO [main] org.apache.catalina.core.StandardService.log:173 - Starting service [Tomcat]
+2023-10-27 21:00:51.464 INFO [main] org.apache.catalina.core.StandardEngine.log:173 - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-10-27 21:00:51.647 INFO [main] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 - Initializing Spring embedded WebApplicationContext
+2023-10-27 21:00:51.647 INFO [main] o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:292 - Root WebApplicationContext: initialization completed in 3347 ms
+2023-10-27 21:00:52.040 INFO [main] com.zaxxer.hikari.HikariDataSource.getConnection:110 - HikariPool-1 - Starting...
+2023-10-27 21:00:53.534 INFO [main] com.zaxxer.hikari.HikariDataSource.getConnection:123 - HikariPool-1 - Start completed.
+2023-10-27 21:00:53.588 INFO [main] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-27 21:00:53.657 INFO [main] org.hibernate.Version.logVersion:44 - HHH000412: Hibernate ORM core version 5.6.11.Final
+2023-10-27 21:00:53.936 INFO [main] org.hibernate.annotations.common.Version.<clinit>:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-27 21:00:54.079 INFO [main] org.hibernate.dialect.Dialect.<init>:175 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-27 21:00:54.311 INFO [main] o.h.e.t.jta.platform.internal.JtaPlatformInitiator.initiateService:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-27 21:00:54.325 INFO [main] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-27 21:00:58.648 INFO [main] o.s.boot.actuate.endpoint.web.EndpointLinksResolver.<init>:58 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-27 21:00:59.970 INFO [main] org.apache.coyote.http11.Http11NioProtocol.log:173 - Starting ProtocolHandler ["http-nio-8081"]
+2023-10-27 21:00:59.997 INFO [main] o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 - Tomcat started on port(s): 8081 (http) with context path ''
+2023-10-27 21:01:00.338 INFO [main] com.example.demo.DemoApplication.logStarted:61 - Started DemoApplication in 12.822 seconds (JVM running for 15.307)
+2023-10-27 21:01:02.683 INFO [http-nio-8081-exec-1] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-27 21:01:02.684 INFO [http-nio-8081-exec-1] org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'dispatcherServlet'
+2023-10-27 21:01:02.689 INFO [http-nio-8081-exec-1] org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 5 ms
+2023-10-27 21:06:17.778 INFO [SpringApplicationShutdownHook] sys-user.shutdownAsyncManager:31 - ====关闭后台任务任务线程池====
+2023-10-27 21:06:17.907 INFO [SpringApplicationShutdownHook] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.destroy:651 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-27 21:06:17.911 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.close:350 - HikariPool-1 - Shutdown initiated...
+2023-10-27 21:06:17.930 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.close:352 - HikariPool-1 - Shutdown completed.
+2023-10-27 21:06:30.792 INFO [background-preinit] org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.2.5.Final
+2023-10-27 21:06:30.796 INFO [main] com.example.demo.DemoApplication.logStarting:55 - Starting DemoApplication using Java 1.8.0_172 on DESKTOP-5DFIICV with PID 1864 (D:\rq\demo\target\classes started by qinxiyun in D:\rq\demo)
+2023-10-27 21:06:30.797 INFO [main] com.example.demo.DemoApplication.logStartupProfileInfo:640 - The following 1 profile is active: "local"
+2023-10-27 21:06:32.513 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:262 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-27 21:06:32.514 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-10-27 21:06:32.541 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:201 - Finished Spring Data repository scanning in 22 ms. Found 0 JDBC repository interfaces.
+2023-10-27 21:06:32.551 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:262 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-27 21:06:32.551 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:132 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-27 21:06:32.569 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:201 - Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2023-10-27 21:06:32.585 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:262 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-27 21:06:32.587 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:132 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-27 21:06:32.616 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:201 - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2023-10-27 21:06:34.940 INFO [main] o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 - Tomcat initialized with port(s): 8081 (http)
+2023-10-27 21:06:34.950 INFO [main] org.apache.coyote.http11.Http11NioProtocol.log:173 - Initializing ProtocolHandler ["http-nio-8081"]
+2023-10-27 21:06:34.951 INFO [main] org.apache.catalina.core.StandardService.log:173 - Starting service [Tomcat]
+2023-10-27 21:06:34.952 INFO [main] org.apache.catalina.core.StandardEngine.log:173 - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-10-27 21:06:35.192 INFO [main] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 - Initializing Spring embedded WebApplicationContext
+2023-10-27 21:06:35.193 INFO [main] o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:292 - Root WebApplicationContext: initialization completed in 4334 ms
+2023-10-27 21:06:35.595 INFO [main] com.zaxxer.hikari.HikariDataSource.getConnection:110 - HikariPool-1 - Starting...
+2023-10-27 21:06:37.235 INFO [main] com.zaxxer.hikari.HikariDataSource.getConnection:123 - HikariPool-1 - Start completed.
+2023-10-27 21:06:37.282 INFO [main] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-27 21:06:37.328 INFO [main] org.hibernate.Version.logVersion:44 - HHH000412: Hibernate ORM core version 5.6.11.Final
+2023-10-27 21:06:37.584 INFO [main] org.hibernate.annotations.common.Version.<clinit>:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-27 21:06:37.721 INFO [main] org.hibernate.dialect.Dialect.<init>:175 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-27 21:06:37.872 INFO [main] o.h.e.t.jta.platform.internal.JtaPlatformInitiator.initiateService:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-27 21:06:37.882 INFO [main] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-27 21:06:41.538 INFO [main] o.s.boot.actuate.endpoint.web.EndpointLinksResolver.<init>:58 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-27 21:06:42.471 INFO [main] org.apache.coyote.http11.Http11NioProtocol.log:173 - Starting ProtocolHandler ["http-nio-8081"]
+2023-10-27 21:06:42.493 INFO [main] o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 - Tomcat started on port(s): 8081 (http) with context path ''
+2023-10-27 21:06:42.802 INFO [main] com.example.demo.DemoApplication.logStarted:61 - Started DemoApplication in 12.665 seconds (JVM running for 14.736)
+2023-10-27 21:06:45.040 INFO [RMI TCP Connection(4)-192.168.2.7] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-27 21:06:45.041 INFO [RMI TCP Connection(4)-192.168.2.7] org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'dispatcherServlet'
+2023-10-27 21:06:45.046 INFO [RMI TCP Connection(4)-192.168.2.7] org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 5 ms
+2023-10-27 21:07:39.236 INFO [SpringApplicationShutdownHook] sys-user.shutdownAsyncManager:31 - ====关闭后台任务任务线程池====
+2023-10-27 21:07:39.372 INFO [SpringApplicationShutdownHook] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.destroy:651 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-27 21:07:39.378 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.close:350 - HikariPool-1 - Shutdown initiated...
+2023-10-27 21:07:39.403 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.close:352 - HikariPool-1 - Shutdown completed.
+2023-10-27 21:07:52.838 INFO [background-preinit] org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.2.5.Final
+2023-10-27 21:07:52.846 INFO [main] com.example.demo.DemoApplication.logStarting:55 - Starting DemoApplication using Java 1.8.0_172 on DESKTOP-5DFIICV with PID 16176 (D:\rq\demo\target\classes started by qinxiyun in D:\rq\demo)
+2023-10-27 21:07:52.846 INFO [main] com.example.demo.DemoApplication.logStartupProfileInfo:640 - The following 1 profile is active: "local"
+2023-10-27 21:07:54.347 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:262 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-27 21:07:54.348 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:132 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-10-27 21:07:54.374 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:201 - Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
+2023-10-27 21:07:54.384 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:262 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-27 21:07:54.384 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:132 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-27 21:07:54.398 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:201 - Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2023-10-27 21:07:54.412 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:262 - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-27 21:07:54.413 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:132 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-27 21:07:54.430 INFO [main] o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:201 - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-10-27 21:07:55.293 INFO [main] o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 - Tomcat initialized with port(s): 8081 (http)
+2023-10-27 21:07:55.302 INFO [main] org.apache.coyote.http11.Http11NioProtocol.log:173 - Initializing ProtocolHandler ["http-nio-8081"]
+2023-10-27 21:07:55.303 INFO [main] org.apache.catalina.core.StandardService.log:173 - Starting service [Tomcat]
+2023-10-27 21:07:55.303 INFO [main] org.apache.catalina.core.StandardEngine.log:173 - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-10-27 21:07:55.462 INFO [main] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 - Initializing Spring embedded WebApplicationContext
+2023-10-27 21:07:55.462 INFO [main] o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:292 - Root WebApplicationContext: initialization completed in 2556 ms
+2023-10-27 21:07:55.739 INFO [main] com.zaxxer.hikari.HikariDataSource.getConnection:110 - HikariPool-1 - Starting...
+2023-10-27 21:07:56.975 INFO [main] com.zaxxer.hikari.HikariDataSource.getConnection:123 - HikariPool-1 - Start completed.
+2023-10-27 21:07:57.020 INFO [main] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-27 21:07:57.075 INFO [main] org.hibernate.Version.logVersion:44 - HHH000412: Hibernate ORM core version 5.6.11.Final
+2023-10-27 21:07:57.304 INFO [main] org.hibernate.annotations.common.Version.<clinit>:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-27 21:07:57.455 INFO [main] org.hibernate.dialect.Dialect.<init>:175 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-27 21:07:57.603 INFO [main] o.h.e.t.jta.platform.internal.JtaPlatformInitiator.initiateService:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-27 21:07:57.615 INFO [main] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-27 21:08:00.874 INFO [main] o.s.boot.actuate.endpoint.web.EndpointLinksResolver.<init>:58 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-27 21:08:01.782 INFO [main] org.apache.coyote.http11.Http11NioProtocol.log:173 - Starting ProtocolHandler ["http-nio-8081"]
+2023-10-27 21:08:01.805 INFO [main] o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 - Tomcat started on port(s): 8081 (http) with context path ''
+2023-10-27 21:08:02.138 INFO [main] com.example.demo.DemoApplication.logStarted:61 - Started DemoApplication in 9.876 seconds (JVM running for 12.031)
+2023-10-27 21:08:03.272 INFO [RMI TCP Connection(2)-192.168.2.7] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-27 21:08:03.273 INFO [RMI TCP Connection(2)-192.168.2.7] org.springframework.web.servlet.DispatcherServlet.initServletBean:525 - Initializing Servlet 'dispatcherServlet'
+2023-10-27 21:08:03.276 INFO [RMI TCP Connection(2)-192.168.2.7] org.springframework.web.servlet.DispatcherServlet.initServletBean:547 - Completed initialization in 3 ms
