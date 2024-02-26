@@ -16,10 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
@@ -210,22 +207,36 @@ public class DeviceInfoService {
 //                .in(DeviceInfo::getAlarmType,alarmTypeList);
 
         try{
-            List<DeviceInfo> deviceList = deviceInfoMapper.selectList(wrapper);
+            List<DeviceInfo> deviceList = deviceInfoMapper.selectList(wrapper);//查询统一个车间下设备状态信息
+            boolean firstAlarm = true;
             for(DeviceInfo deviceInfo : deviceList){
-                if(redisUtil.hasKey(GlobalConstants.DEVICE_INFO_KEY + deviceInfo.getDeviceId())){
-
+                if(deviceInfo.getDeviceId().equals(gasAlarmHistory.getDeviceId())){
+                    continue;
                 }
-
+                if(redisUtil.hasKey(GlobalConstants.DEVICE_INFO_KEY + deviceInfo.getDeviceId())){
+                    DeviceInfo deviceInfoReal = (DeviceInfo) redisUtil.get(GlobalConstants.DEVICE_INFO_KEY + deviceInfo.getDeviceId());//实时设备信息
+                    if(alarmTypeList.contains(deviceInfoReal.getAlarmType())){//high和low
+                        if(gasAlarmHistory.getRoomId()==deviceInfoReal.getRoomId()){//同一个车间设备
+                            Date realTime = deviceInfoReal.getAlarmTime();
+                            Date alarmTime = gasAlarmHistory.getAlarmTime();
+                            if(realTime!=null&&alarmTime!=null){
+                                if(realTime.before(alarmTime)){//当前有设备告警时间比此告警设备告警时间早
+                                    firstAlarm = false;
+                                }
+                            }
+                        }else{
+                            System.out.println("非同一个车间设备");
+                        }
+                    }
+                }
             }
+            return firstAlarm;
 
-
-
-
-            if(deviceList!=null&&deviceList.size()>0){
-                return true;
-            }else{
-                return false;
-            }
+//            if(deviceList!=null&&deviceList.size()>0){
+//                return true;
+//            }else{
+//                return false;
+//            }
         }catch (Exception e){
 //            System.out.println(e);
             return false;

@@ -65,7 +65,7 @@ public class GasAlarmHistoryController {
            return  ResponseBase.fail("告警信无车间信息roomId");
         }
         try{
-            GasAlarmHistory history = gasAlarmHistoryService.GetGasAlarmHistoryLast(gasAlarmHistory);
+//            GasAlarmHistory history = gasAlarmHistoryService.GetGasAlarmHistoryLast(gasAlarmHistory);
 //            if(history==null||(history.getAlarmTime().getTime()-gasAlarmHistory.getAlarmTime().getTime())/1000>reportInterval){//时间大于一个小时
                 //判断是否为首报，如果当前的车间没有告警 todo
                 boolean abnormalExist = deviceInfoService.abnormalDeviceInfoExist(gasAlarmHistory);
@@ -75,7 +75,7 @@ public class GasAlarmHistoryController {
                     gasAlarmHistory.setFirstAlarm(1);
                 }
                 gasAlarmHistoryService.insert(gasAlarmHistory);
-                //触发当前车间下的所有用户，进行告警 todo
+                //触发当前车间下的所有用户，进行告警
                 if(userService.startAlarmVoiceByRoomId(roomId)){
 //                    System.out.println("警告触发成功");
                 }else{
