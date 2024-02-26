@@ -3,7 +3,7 @@ server:
 
 spring:
   profiles:
-    active: dev
+    active: local
   mvc:
     pathmatch:
       matching-strategy: ANT_PATH_MATCHER

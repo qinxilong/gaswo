@@ -58,6 +58,7 @@ public class DeviceInfoController {
     @ApiOperation(value = "新增设备信息")
     @PostMapping("/deviceInfo/add")
     public ResponseBase add(@RequestBody DeviceInfo deviceInfo) {
+        System.out.println("收到设备新增请求");
         boolean deviceExist = deviceInfoService.selectExist(deviceInfo);
         if (!deviceExist) {//设备不存在
             try {
