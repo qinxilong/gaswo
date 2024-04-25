@@ -61,6 +61,7 @@ public class RedisUtil {
      */
     public boolean hasKey(String key) {
         try {
+//            System.out.println(redisTemplate.hasKey(key));
             return redisTemplate.hasKey(key);
         } catch (Exception e) {
             e.printStackTrace();

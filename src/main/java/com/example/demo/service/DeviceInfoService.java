@@ -91,8 +91,11 @@ public class DeviceInfoService {
             List<DeviceInfo> deviceInfoList = deviceInfoMapper.selectList(wrapper);
             for(DeviceInfo deviceInfo : deviceInfoList){
                 String deviceStatus = "normal";
+                System.out.println(GlobalConstants.DEVICE_STATUS_KEY + deviceInfo.getDeviceId());
                 if(redisUtil.hasKey(GlobalConstants.DEVICE_STATUS_KEY + deviceInfo.getDeviceId())){
                     deviceStatus = (String) redisUtil.get(GlobalConstants.DEVICE_STATUS_KEY + deviceInfo.getDeviceId());
+                }else{
+//                    System.out.println("不存在");
                 }
 //                if(deviceInfo.getAlarmType()==null||deviceInfo.getAlarmType().trim().equals("")){
 //                    deviceInfo.setAlarmType("normal");
@@ -107,8 +110,8 @@ public class DeviceInfoService {
                             deviceInfo.setWorkOrderStatus("已派发");
                         }
                     }
+                    deviceInfoListFilter.add(deviceInfo);
                 }
-                deviceInfoListFilter.add(deviceInfo);
             }
             return deviceInfoListFilter;
         }catch (Exception e){

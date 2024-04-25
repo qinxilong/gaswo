@@ -2,6 +2,7 @@ package com.example.demo.controller;
 
 import com.example.demo.common.utils.http.HttpUtils;
 import com.example.demo.domain.*;
+import com.example.demo.domain.constant.GlobalConstants;
 import com.example.demo.response.RequestBaseParams;
 import com.example.demo.response.RequestDeviceDetailParams;
 import com.example.demo.response.ResponseBase;
@@ -10,6 +11,7 @@ import com.example.demo.service.DeviceDetailService;
 import com.example.demo.service.DeviceInfoService;
 import com.example.demo.service.EquipmentService;
 import com.example.demo.service.ISysUserService;
+import com.example.demo.utils.RedisUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
@@ -17,6 +19,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -38,7 +41,8 @@ public class DeviceInfoController {
 
     @Autowired
     private ISysUserService userService;
-
+    @Resource
+    private RedisUtil redisUtil;
     @ApiOperation(value = "获取设备信息分页查询")
     @GetMapping("/deviceInfo/list")
     public ResponseData selectList(@ModelAttribute RequestBaseParams params) {
@@ -171,7 +175,17 @@ public class DeviceInfoController {
 //        System.out.println(equipmentList);
         try{
             if(equipmentList!=null){
-                equipmentList.stream().forEach(equipment -> {equipmentService.update(equipment);});
+                equipmentList.stream().forEach(equipment ->
+                {
+                    if(redisUtil.hasKey(GlobalConstants.EQUIPMENT_STATUS_KEY
+                            + equipment.getRoomId()+"-"+equipment.getDeviceType()+"-"+ equipment.getDeviceId())){//有,不插入设备信息
+                        System.out.println("设备信息已经存在");
+                     }else{
+                        equipmentService.update(equipment);//数据库新增设备
+                     }
+                     //更新设备状态信息
+                     redisUtil.set(GlobalConstants.EQUIPMENT_STATUS_KEY + equipment.getRoomId()+"-"+equipment.getDeviceType()+"-"+ equipment.getDeviceId(),equipment.getStatus());
+                });
                 return  ResponseBase.ok();
             }else{
                 return  ResponseBase.fail("接口调用参数为空");
@@ -200,7 +214,13 @@ public class DeviceInfoController {
                 DeviceStatus deviceStatus  = new DeviceStatus();
                 deviceStatus.setId(equipment.getDeviceId());
                 deviceStatus.setLabel(equipment.getDeviceName());
-                deviceStatus.setStatus(equipment.getStatus());
+//                deviceStatus.setStatus(equipment.getStatus());
+                //从redis获取缓存的设备状态信息
+                if(redisUtil.hasKey(GlobalConstants.EQUIPMENT_STATUS_KEY
+                        + equipment.getRoomId()+"-"+equipment.getDeviceType()+"-"+ equipment.getDeviceId())){
+                    String status = (String) redisUtil.get(GlobalConstants.EQUIPMENT_STATUS_KEY + equipment.getRoomId() + "-" + equipment.getDeviceType() + "-" + equipment.getDeviceId());
+                    deviceStatus.setStatus(status);
+                }
                 deviceStatus.setRoomId(equipment.getRoomId());
                 deviceStatus.setDeviceType(equipment.getDeviceType());
                 return deviceStatus;

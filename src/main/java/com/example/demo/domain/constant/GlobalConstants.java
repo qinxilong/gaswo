@@ -15,4 +15,8 @@ public interface GlobalConstants {
 
     String DEVICE_INFO_KEY =  "device::info:";//设备信息key
 
+    String EQUIPMENT_STATUS_KEY =  "equipment::status:";//equipment状态key
+    String EQUIPMENT_INFO_KEY =  "equipment::status:";//equipment信息key
+
+
 }

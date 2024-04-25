@@ -5,10 +5,7 @@ import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.demo.common.utils.StringUtils;
-import com.example.demo.domain.DeviceDetail;
-import com.example.demo.domain.DeviceInfo;
-import com.example.demo.domain.Equipment;
-import com.example.demo.domain.SysUser;
+import com.example.demo.domain.*;
 import com.example.demo.mapper.DeviceDetailMapper;
 import com.example.demo.mapper.EquipmentMapper;
 import com.example.demo.response.RequestDeviceDetailParams;
@@ -75,16 +72,23 @@ public class EquipmentService {
                 .eq(Equipment::getDeviceId,equipment.getDeviceId())
 //                .eq(Equipment::getDeviceName,equipment.getDeviceName())
                 .eq(Equipment::getDeviceType,equipment.getDeviceType());
+//                .last("LIMIT 1");
         try{
-            Equipment eq = equipmentMapper.selectOne(wrapper);
-            if(eq!=null&&eq.getId()!=null){
-                return true;
-            }else{
-                return false;
+            boolean exist = equipmentMapper.exists(wrapper);
+            if(exist){
+                return  true;
+            }else {
+                return  false;
             }
+//            Equipment eq = equipmentMapper.selectOne(wrapper);
+//            if(eq!=null&&eq.getId()!=null){
+//                return true;
+//            }else{
+//                return false;
+//            }
         }catch (Exception e){
 //            System.out.println(e);
-            return false;
+            return true;
         }
     }
 
