@@ -1,6 +1,6 @@
 package com.example.demo.controller;
 
-import com.example.demo.common.utils.http.HttpUtils;
+import com.example.demo.common.utils.StringUtils;
 import com.example.demo.domain.*;
 import com.example.demo.domain.constant.GlobalConstants;
 import com.example.demo.response.RequestBaseParams;
@@ -96,6 +96,7 @@ public class DeviceInfoController {
     @ApiOperation(value = "更新设备信息")
     @PutMapping("/deviceInfo/update")
     public ResponseBase update(@RequestBody DeviceInfo deviceInfo) {
+        System.out.println("收到设备更新信息");
         boolean deviceExist = deviceInfoService.selectExist(deviceInfo);
         if (!deviceExist) {//设备不存在
             try {
@@ -165,26 +166,58 @@ public class DeviceInfoController {
     @PutMapping("/equipment/update")
     public ResponseBase equipmentUpdate(@RequestBody Equipment equipment) {
 //        System.out.println("新增或者更新网关、主机设备信息");
-//        System.out.println(equipment.toString());
-        return  equipmentService.update(equipment);
+        if(redisUtil.hasKey(GlobalConstants.EQUIPMENT_STATUS_KEY
+                + equipment.getRoomId()+"-"+equipment.getDeviceType()+"-"+ equipment.getDeviceId())){//有,不插入设备信息
+            System.out.println("设备信息缓存已经存在");
+            String status = (String) redisUtil.get(GlobalConstants.EQUIPMENT_STATUS_KEY
+                    + equipment.getRoomId()+"-"+equipment.getDeviceType()+"-"+ equipment.getDeviceId());
+            if(!StringUtils.isEmpty(status)){
+                if(status.equals(equipment.getStatus())){//设备状态有变化，更新数据
+                    System.out.println("设备信息状态没有变化，不做任何操作");
+                }else{
+                    System.out.println("设备信息状态发生变化，更细数据");
+                    updateEquipment(equipment);
+                }
+            }else{
+                updateEquipment(equipment);
+                System.out.println("设备状态为空");
+            }
+        }else{
+            System.out.println("设备信息缓存不存在");
+            updateEquipment(equipment);
+        }
+        return  ResponseBase.ok();
+//        return  equipmentService.update(equipment);
     }
 
     @ApiOperation(value = "批量新增或者更新网关、主机设备信息")
     @PutMapping("/equipment/update/list")
     public ResponseBase equipmentListUpdate(@RequestBody List<Equipment> equipmentList) {
-//        System.out.println(equipmentList);
+        System.out.println(equipmentList);
         try{
             if(equipmentList!=null){
                 equipmentList.stream().forEach(equipment ->
                 {
                     if(redisUtil.hasKey(GlobalConstants.EQUIPMENT_STATUS_KEY
                             + equipment.getRoomId()+"-"+equipment.getDeviceType()+"-"+ equipment.getDeviceId())){//有,不插入设备信息
-                        System.out.println("设备信息已经存在");
+                        System.out.println("设备信息缓存已经存在");
+                        String status = (String) redisUtil.get(GlobalConstants.EQUIPMENT_STATUS_KEY
+                                + equipment.getRoomId()+"-"+equipment.getDeviceType()+"-"+ equipment.getDeviceId());
+                        if(!StringUtils.isEmpty(status)){
+                            if(status.equals(equipment.getStatus())){//设备状态有变化，更新数据
+                                System.out.println("设备信息状态没有变化，不做任何操作");
+                            }else{
+                                System.out.println("设备信息状态发生变化，更细数据");
+                                updateEquipment(equipment);
+                            }
+                        }else{
+                            updateEquipment(equipment);
+                            System.out.println("设备状态为空");
+                        }
                      }else{
-                        equipmentService.update(equipment);//数据库新增设备
-                     }
-                     //更新设备状态信息
-                     redisUtil.set(GlobalConstants.EQUIPMENT_STATUS_KEY + equipment.getRoomId()+"-"+equipment.getDeviceType()+"-"+ equipment.getDeviceId(),equipment.getStatus());
+                        System.out.println("设备信息缓存不存在");
+                        updateEquipment(equipment);
+                    }
                 });
                 return  ResponseBase.ok();
             }else{
@@ -196,6 +229,12 @@ public class DeviceInfoController {
             return  ResponseBase.fail("批量新增或更新设备信息失败");
         }
     }
+    //更新equipment信息
+    public void updateEquipment(Equipment equipment){
+        equipmentService.update(equipment);
+        //更新设备状态信息
+        redisUtil.set(GlobalConstants.EQUIPMENT_STATUS_KEY + equipment.getRoomId()+"-"+equipment.getDeviceType()+"-"+ equipment.getDeviceId(),equipment.getStatus());
+    }
 
     @ApiOperation(value = "获取设备通信状态列表")
     @GetMapping("/device/status/list")
@@ -206,7 +245,7 @@ public class DeviceInfoController {
         SysUser sysUserDetail = userService.getSysUser();
 //        System.out.println(sysUserDetail);
         if(sysUserDetail==null){
-            return (ResponseData) ResponseBase.fail("用户不存在");
+            return (ResponseData) ResponseData.fail("用户不存在");
         }
         List<Equipment> equipmentList = equipmentService.selectList(sysUserDetail);
         if(equipmentList!=null){
@@ -216,11 +255,12 @@ public class DeviceInfoController {
                 deviceStatus.setLabel(equipment.getDeviceName());
 //                deviceStatus.setStatus(equipment.getStatus());
                 //从redis获取缓存的设备状态信息
+                String status = equipment.getStatus();
                 if(redisUtil.hasKey(GlobalConstants.EQUIPMENT_STATUS_KEY
                         + equipment.getRoomId()+"-"+equipment.getDeviceType()+"-"+ equipment.getDeviceId())){
-                    String status = (String) redisUtil.get(GlobalConstants.EQUIPMENT_STATUS_KEY + equipment.getRoomId() + "-" + equipment.getDeviceType() + "-" + equipment.getDeviceId());
-                    deviceStatus.setStatus(status);
+                    status = (String) redisUtil.get(GlobalConstants.EQUIPMENT_STATUS_KEY + equipment.getRoomId() + "-" + equipment.getDeviceType() + "-" + equipment.getDeviceId());
                 }
+                deviceStatus.setStatus(status);
                 deviceStatus.setRoomId(equipment.getRoomId());
                 deviceStatus.setDeviceType(equipment.getDeviceType());
                 return deviceStatus;

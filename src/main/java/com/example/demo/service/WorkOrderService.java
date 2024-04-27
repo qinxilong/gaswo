@@ -173,15 +173,15 @@ public class WorkOrderService {
                 .eq(WorkOrder::getRoomId,deviceInfo.getRoomId())
                 .eq(WorkOrder::getPosition,deviceInfo.getPosition())
                 .eq(WorkOrder::getAlarmType,deviceInfo.getAlarmType())
-                //.eq(WorkOrder::getProcessStatus,0)//筛选已派发（未完成）
+                .eq(WorkOrder::getProcessStatus,0)//筛选已派发（未完成）
                 .orderByDesc(WorkOrder::getAlarmTime)
                 .last("LIMIT 1");
         try{
-            WorkOrder workOrder = workOrderMapper.selectOne(wrapper);
-            if(workOrder!=null&&workOrder.getProcessStatus()==1){
-                workOrder = null;
-            }
-            return  workOrder;
+//            WorkOrder workOrder = workOrderMapper.selectOne(wrapper);
+//            if(workOrder!=null&&workOrder.getProcessStatus()==1){
+//                workOrder = null;
+//            }
+            return  workOrderMapper.selectOne(wrapper);
         }catch (Exception e){
 //            System.out.println(e);
             return null;

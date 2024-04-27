@@ -1,5 +1,6 @@
 package com.example.demo.service;
 
+import com.alibaba.fastjson2.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -90,28 +91,48 @@ public class DeviceInfoService {
         try{
             List<DeviceInfo> deviceInfoList = deviceInfoMapper.selectList(wrapper);
             for(DeviceInfo deviceInfo : deviceInfoList){
-                String deviceStatus = "normal";
-                System.out.println(GlobalConstants.DEVICE_STATUS_KEY + deviceInfo.getDeviceId());
-                if(redisUtil.hasKey(GlobalConstants.DEVICE_STATUS_KEY + deviceInfo.getDeviceId())){
-                    deviceStatus = (String) redisUtil.get(GlobalConstants.DEVICE_STATUS_KEY + deviceInfo.getDeviceId());
-                }else{
-//                    System.out.println("不存在");
-                }
-//                if(deviceInfo.getAlarmType()==null||deviceInfo.getAlarmType().trim().equals("")){
-//                    deviceInfo.setAlarmType("normal");
+//                String deviceStatus = "normal";
+//                System.out.println(GlobalConstants.DEVICE_STATUS_KEY + deviceInfo.getDeviceId());
+//                if(redisUtil.hasKey(GlobalConstants.DEVICE_STATUS_KEY + deviceInfo.getDeviceId())){
+//                    deviceStatus = (String) redisUtil.get(GlobalConstants.DEVICE_STATUS_KEY + deviceInfo.getDeviceId());
+//                }else{
+////                    System.out.println("不存在");
 //                }
-                deviceInfo.setAlarmType(deviceStatus);
-                if(!deviceInfo.getAlarmType().equals("normal")){//异常设备
+                String status = (String) redisUtil.get(GlobalConstants.DEVICE_STATUS_KEY + deviceInfo.getDeviceId());
+                if(!StringUtils.isEmpty(status)&&!status.equals("normal")){
+//                    deviceStatus = status;
+                    deviceInfo.setAlarmType(status);
                     WorkOrder workOrder = workOrderService.selectWorkOrderLast(deviceInfo);
-                    if(workOrder==null){
-                        deviceInfo.setWorkOrderStatus("未派发");
+                    if(workOrder!=null){
+                        deviceInfo.setWorkOrderStatus("已派发");
                     }else{
-                        if(workOrder.getProcessStatus()==0){
-                            deviceInfo.setWorkOrderStatus("已派发");
-                        }
+                        deviceInfo.setWorkOrderStatus("未派发");
                     }
                     deviceInfoListFilter.add(deviceInfo);
                 }
+
+//                if(deviceInfo.getAlarmType()==null||deviceInfo.getAlarmType().trim().equals("")){
+//                    deviceInfo.setAlarmType("normal");
+//                }
+//                if(!deviceStatus.equals("normal")){//异常设备
+//                    deviceInfo.setAlarmType(deviceStatus);
+//                    WorkOrder workOrder = workOrderService.selectWorkOrderLast(deviceInfo);
+//                    if(workOrder!=null&&workOrder.getProcessStatus()==0){
+//                        deviceInfo.setWorkOrderStatus("已派发");
+//                    }else{
+//                        deviceInfo.setWorkOrderStatus("未派发");
+//                    }
+//                    deviceInfoListFilter.add(deviceInfo);
+//
+//
+////                    if(workOrder==null){
+////                        deviceInfo.setWorkOrderStatus("未派发");
+////                    }else{
+////                        if(workOrder.getProcessStatus()==0){
+////                            deviceInfo.setWorkOrderStatus("已派发");
+////                        }
+////                    }
+//                }
             }
             return deviceInfoListFilter;
         }catch (Exception e){
@@ -217,7 +238,11 @@ public class DeviceInfoService {
                     continue;
                 }
                 if(redisUtil.hasKey(GlobalConstants.DEVICE_INFO_KEY + deviceInfo.getDeviceId())){
-                    DeviceInfo deviceInfoReal = (DeviceInfo) redisUtil.get(GlobalConstants.DEVICE_INFO_KEY + deviceInfo.getDeviceId());//实时设备信息
+//                    System.out.println(redisUtil.get(GlobalConstants.DEVICE_INFO_KEY + deviceInfo.getDeviceId()));//实时设备信息);
+                    String device = (String) redisUtil.get(GlobalConstants.DEVICE_INFO_KEY + deviceInfo.getDeviceId());//实时设备信息
+                    DeviceInfo deviceInfoReal = JSONObject.parseObject(device,DeviceInfo.class);
+//                    System.out.println(deviceInfoReal);
+
                     if(alarmTypeList.contains(deviceInfoReal.getAlarmType())){//high和low
                         if(gasAlarmHistory.getRoomId()==deviceInfoReal.getRoomId()){//同一个车间设备
                             Date realTime = deviceInfoReal.getAlarmTime();
